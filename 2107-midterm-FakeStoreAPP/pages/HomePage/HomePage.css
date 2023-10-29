@@ -1,0 +1,80 @@
+/* HomePage.css */
+
+/* Homepage styles */
+.homepage {
+    text-align: center;
+    background-color: #f0f0f0; /* Light gray background color */
+    padding: 2rem; /* Add more padding */
+    font-family: 'Josefin Sans', sans-serif; /* Custom font */
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* White background color */
+    padding: 1rem 0; /* Reduce top and bottom padding */
+}
+
+.header-left a, .header-right a {
+    color: #1a1a1a; /* Dark gray text color */
+    text-decoration: none;
+    font-size: 1rem; /* Font size */
+    margin: 0 1rem; /* Add margin for spacing */
+}
+
+.header-right .MuiSvgIcon-root {
+    color: #1a1a1a; /* Dark gray icon color */
+}
+
+/* Middle Content styles */
+.middle-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of images */
+    justify-content: center; /* Center the content */
+    padding: 1rem; /* Add more padding */
+}
+
+.left-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    text-align: center;
+}
+
+.right-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 1rem; /* Reduce spacing between images */
+}
+
+/* Slogan and button styles */
+.slogan {
+    font-size: 1.5rem; /* Smaller font size */
+    font-weight: 600; /* Bolder font weight */
+    color: #1a1a1a; /* Dark gray text color */
+    margin: 0;
+    margin-bottom: 1rem; /* More space under the slogan */
+}
+
+/* Shop Now button styles */
+.shop-now-button {
+    background-color: transparent; /* Transparent background */
+    border: 2px ; /* Add border */
+    padding: 0.75rem 1.5rem; /* Reduce padding for a smaller size */
+    border-radius: 1rem; /* Rounded edges */
+    font-weight: 600; /* Bolder text */
+    font-size: 1rem; /* Smaller font size */
+}
+
+
+/* Product image styles */
+.product-image {
+    width: 100%; /* Ensure all images take full width */
+    height: 100%; /* Make images the same height */
+    border-radius: 1rem; /* Rounded edges for images */
+    margin: 0.5rem; /* Reduce margin around images */
+}
