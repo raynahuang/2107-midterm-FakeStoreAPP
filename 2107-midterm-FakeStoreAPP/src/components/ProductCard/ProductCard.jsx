@@ -7,11 +7,8 @@ import {
   Button,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-
-// Import styled from @mui/system
 import { styled } from "@mui/system";
 
-// Define a styled component for the Card
 const StyledCard = styled(Card)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
@@ -21,7 +18,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
   margin: "2px",
   borderRadius: "1rem",
   boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
-  position: "relative", // Set the position to relative
+  position: "relative",
 }));
 
 const StyledCardMedia = styled(CardMedia)(({ theme }) => ({
@@ -41,9 +38,9 @@ const StyledPrice = styled(Typography)(({ theme }) => ({
 
 const StyledButton = styled(Button)(({ theme }) => ({
   display: "flex",
-  position: "absolute", // Set the position to absolute
-  bottom: "10px", // Adjust the distance from the bottom
-  left: "10px", // Adjust the distance from the left
+  position: "absolute",
+  bottom: "10px",
+  left: "10px",
   fontFamily: "'Josefin Sans', sans-serif",
 }));
 
