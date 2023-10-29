@@ -20,7 +20,10 @@ body {
 }
 
 h1 {
-  /* Add any specific styling for h1 here if needed. */
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 0.5em;
 }
 
 button {
