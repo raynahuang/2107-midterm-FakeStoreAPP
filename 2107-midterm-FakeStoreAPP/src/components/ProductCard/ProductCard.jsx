@@ -6,7 +6,7 @@ import {
   Typography,
   Button,
 } from "@mui/material";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { styled } from "@mui/system";
 
 const StyledCard = styled(Card)(({ theme }) => ({
@@ -45,6 +45,13 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }));
 
 const ProductCard = ({ product }) => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    // Use the navigate function to go to the product detail page
+    navigate(`/product/${product.id}`);
+  };
+
   return (
     <StyledCard>
       <StyledCardMedia
@@ -53,17 +60,13 @@ const ProductCard = ({ product }) => {
         image={product.image}
       />
       <CardContent>
-        <StyledTitle variant="subtitle1">
-          {product.title}
-        </StyledTitle>
-        <StyledPrice variant="body2">
-          ${product.price}
-        </StyledPrice>
+        <StyledTitle variant="subtitle1">{product.title}</StyledTitle>
+        <StyledPrice variant="body2">${product.price}</StyledPrice>
       </CardContent>
       <StyledButton
         variant="outlined"
         color="primary"
-        component={Link} to={`/product/${product.id}`}
+        onClick={handleLearnMore}
       >
         Learn More
       </StyledButton>
